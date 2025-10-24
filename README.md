@@ -1,7 +1,7 @@
 # Rana Islam's 3D Portfolio
 
-![Portfolio Screenshot](https://i.ibb.co/L62gZ31/portfolio-rana.png )
-<!-- আমি আপনার লাইভ সাইট থেকে একটি স্ক্রিনশট নিয়ে এখানে যুক্ত করেছি -->
+<img width="1338" height="646" alt="Screenshot 2025-10-24 164217" src="https://github.com/user-attachments/assets/7fc4b059-0ef0-4a5c-bae4-c220bac5b205" />
+
 
 এটি আমার ব্যক্তিগত 3D পোর্টফোলিও ওয়েবসাইট। আমার দক্ষতা, প্রকল্প এবং অভিজ্ঞতা একটি ইন্টারেক্টিভ উপায়ে প্রদর্শনের জন্য এটি তৈরি করা হয়েছে।
 
