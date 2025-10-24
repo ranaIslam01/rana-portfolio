@@ -95,7 +95,7 @@ const Hero = ({ scrollToSection, downloadCV }) => {
             >
               {/* GitHub */}
               <a
-                href="https://github.com/ranaIslam01?tab=repositories"
+                href="https://github.com/ranaIslam01"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -109,7 +109,7 @@ const Hero = ({ scrollToSection, downloadCV }) => {
               </a>
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/ranaislam2255"
+                href="https://www.facebook.com/RanaFacebook01/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -124,7 +124,7 @@ const Hero = ({ scrollToSection, downloadCV }) => {
 
               {/* WhatsApp */}
               <a
-                href="https://+8801840248746"
+                href="https://wa.me/8801840248746"
                 target="_blank"
                 rel="noopener noreferrer"
               >
