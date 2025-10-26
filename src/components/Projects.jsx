@@ -30,6 +30,33 @@ const Projects = () => {
       link: "https://bd-calling-project-2.vercel.app/",
       gradient: "from-pink-500 to-purple-600",
     },
+    {
+      title: "Countries Viewer",
+      description:
+        "Countries Viewer is a simple and interactive web app that displays data about countries from around the world.",
+      technologies: ["HTML5", "CSS3","JAVASCRIPT"],
+      techColors: "bg-cyan-500/10 text-cyan-600",
+      link: "https://countries-viewer.vercel.app/",
+      gradient: "from-purple-500 to-pink-600",
+    },
+    {
+      title: "Shopsy",
+      description:
+        "Shopsy হল একটি আধুনিক এবং প্রতিক্রিয়াশীল ই-কমার্স প্ল্যাটফর্ম যা React, Vite, এবং Tailwind CSS ব্যবহার করে তৈরি করা হয়েছে।",
+      technologies: ["REACT","TAILWIND CSS", "AOS"],
+      techColors: "bg-cyan-500/10 text-cyan-600",
+      link: "https://shopsy-gold.vercel.app/",
+      gradient: "from-green-500 to-yellow-600",
+    },
+    {
+      title: "Tic-Tac-Toe Game",
+      description:
+        "ShopHTML, CSS ও JavaScript দিয়ে বানানো একটি সাধারন ২-জনের টিক-ট্যাক-টো গেম।",
+      technologies: ["HTML5", "CSS3","JAVASCRIPT"],
+      techColors: "bg-cyan-500/10 text-cyan-600",
+      link: "https://tic-tac-toe-game-prnx.vercel.app/",
+      gradient: "from-blue-500 to-red-600",
+    },
   ];
 
   return (
