@@ -4,15 +4,6 @@ import React from 'react'
 const Projects = () => {
   const projectsData = [
     {
-      title: "E-commerce Website",
-      description:
-        "Currently developing a full-featured e-commerce platform using the MERN stack with modern UI/UX design and responsive layout.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      techColors: "bg-primary/10 text-primary",
-      link: "https://ecommerce-rana-islam.vercel.app",
-      gradient: "from-primary to-purple-600",
-    },
-    {
       title: "Swift Express Cargo",
       description:
         "This responsive portfolio website built with html, Tailwind CSS, JavaScript, featuring dark/light mode and smooth animations.",
@@ -22,12 +13,31 @@ const Projects = () => {
       gradient: "from-cyan-500 to-blue-600",
     },
     {
-      title: "FileWisely",
+      title: "Shopsy",
       description:
-        "This responsive portfolio website built with html, CSS.",
+        "Shopsy হল একটি আধুনিক এবং প্রতিক্রিয়াশীল ই-কমার্স প্ল্যাটফর্ম যা React, Vite, এবং Tailwind CSS ব্যবহার করে তৈরি করা হয়েছে।",
+      technologies: ["REACT","TAILWIND CSS", "AOS"],
+      techColors: "bg-cyan-500/10 text-cyan-600",
+      link: "https://shopsy-gold.vercel.app/",
+      gradient: "from-green-500 to-yellow-600",
+    },
+    {
+      title: "Book Vibe",
+      description:
+        "Developed a responsive book collection web app using React, Tailwind CSS, and API integration, featuring dynamic book data, clean UI, and reusable component architecture.",
+      technologies: ["React", "Tailwind Css","Axios",],
+      techColors: "bg-primary/10 text-primary",
+      link: "https://book-vibe-blush.vercel.app/",
+      gradient: "from-primary to-purple-600",
+    },
+    
+    {
+      title: "Peddy",
+      description:
+        "Peddy is a clean and responsive pet adoption website built using HTML and CSS",
       technologies: ["HTML5", "CSS3"],
       techColors: "bg-cyan-500/10 text-cyan-600",
-      link: "https://bd-calling-project-2.vercel.app/",
+      link: "https://peddy-xi.vercel.app/",
       gradient: "from-pink-500 to-purple-600",
     },
     {
@@ -39,15 +49,7 @@ const Projects = () => {
       link: "https://countries-viewer.vercel.app/",
       gradient: "from-purple-500 to-pink-600",
     },
-    {
-      title: "Shopsy",
-      description:
-        "Shopsy হল একটি আধুনিক এবং প্রতিক্রিয়াশীল ই-কমার্স প্ল্যাটফর্ম যা React, Vite, এবং Tailwind CSS ব্যবহার করে তৈরি করা হয়েছে।",
-      technologies: ["REACT","TAILWIND CSS", "AOS"],
-      techColors: "bg-cyan-500/10 text-cyan-600",
-      link: "https://shopsy-gold.vercel.app/",
-      gradient: "from-green-500 to-yellow-600",
-    },
+    
     {
       title: "Tic-Tac-Toe Game",
       description:
