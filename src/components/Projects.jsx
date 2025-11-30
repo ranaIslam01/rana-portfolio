@@ -30,45 +30,46 @@ const Projects = () => {
       github: "https://github.com/ranaIslam01/dragon-news",
     },
     {
+      title: "Motor Garage",
+      category: "Automotive Business Website",
+      image: "Motor Garage.png",
+      description:
+        "A modern and fully responsive auto-service website built with React and Tailwind CSS. It features dynamic service pages, a booking modal, blog section, contact form, and Google Maps integration — optimized for clean UI, fast performance, and seamless user experience.",
+      technologies: ["HTML5", "CSS3", "JavaScript","Figma"],
+      link: "https://motor-garage.vercel.app/",
+      github: "https://github.com/ranaIslam01/motor-garage",
+    },
+    {
       title: "Book Vibe",
       category: "Web App",
-      image: "https://source.unsplash.com/800x600/?books",
+      image: "Book Vibe.png",
       description:
         "Book collection web app with API integration, clean UI & reusable components. Users can explore books with detailed pages, wishlist options, and dynamic page routing.",
-      technologies: ["React", "Tailwind", "Axios", "Figma"],
+      technologies: ["React", "TailwindCss", "Axios", "Figma"],
       link: "https://book-vibe-blush.vercel.app/",
-      github: "https://github.com/",
+      github: "https://github.com/ranaIslam01/book-vibe",
     },
     {
       title: "Peddy",
       category: "Pet Adoption",
-      image: "https://source.unsplash.com/800x600/?pets",
+      image: "Peddy.png",
       description:
         "Clean & responsive pet adoption website built using HTML, CSS & JavaScript. Includes pets listing, filtering options, and beautiful UI animations.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       link: "https://peddy-xi.vercel.app/",
-      github: "https://github.com/",
+      github: "https://github.com/ranaIslam01/peddy",
     },
     {
       title: "Countries Viewer",
       category: "Data App",
-      image: "https://source.unsplash.com/800x600/?world",
+      image: "Country View.png",
       description:
         "Simple interactive countries viewer using REST Countries API. Includes search system and clean layout for browsing country details.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       link: "https://countries-viewer.vercel.app/",
-      github: "https://github.com/",
+      github: "https://github.com/ranaIslam01/countries-viewer",
     },
-    {
-      title: "Tic-Tac-Toe",
-      category: "Game",
-      image: "https://source.unsplash.com/800x600/?game",
-      description:
-        "HTML, CSS ও JavaScript দিয়ে তৈরি 2-player টিক-ট্যাক-টো গেম। ইন্টার‍্যাকটিভ বোর্ড, clean UI এবং simple winning logic যুক্ত।",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
-      link: "https://tic-tac-toe-game-prnx.vercel.app/",
-      github: "https://github.com/",
-    },
+    
   ];
 
   return (
