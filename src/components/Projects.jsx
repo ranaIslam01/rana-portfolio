@@ -1,120 +1,164 @@
-import { ExternalLink } from "lucide-react";
-import React from 'react'
+import { ExternalLink, Github } from "lucide-react";
+import React, { useState } from "react";
 
 const Projects = () => {
+  const [expanded, setExpanded] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpanded(expanded === index ? null : index);
+  };
+
   const projectsData = [
     {
       title: "Swift Express Cargo",
+      category: "Courier Service",
+      image: "swift cargo express.png",
       description:
-        "This responsive portfolio website built with html, Tailwind CSS, JavaScript, featuring dark/light mode and smooth animations.",
-      technologies: ["HTML5", "Tailwind", "Javascript"],
-      techColors: "bg-cyan-500/10 text-cyan-600",
+        "Responsive Multi page built using HTML, Tailwind CSS & JavaScript. This project includes a courier service landing page with animated UI sections, fully mobile friendly layouts and optimized loading performance.",
+      technologies: ["HTML5", "Tailwind", "JavaScript", "Figma"],
       link: "https://bd-calling-project-03.vercel.app/",
-      gradient: "from-cyan-500 to-blue-600",
+      github: "https://github.com/ranaIslam01/swift-express-cargo",
     },
     {
-      title: "Shopsy",
+      title: "Dragon News",
+      category: "Online News Portal",
+      image: "Dragon News.png",
       description:
-        "Shopsy হল একটি আধুনিক এবং প্রতিক্রিয়াশীল ই-কমার্স প্ল্যাটফর্ম যা React, Vite, এবং Tailwind CSS ব্যবহার করে তৈরি করা হয়েছে।",
-      technologies: ["REACT","TAILWIND CSS", "AOS"],
-      techColors: "bg-cyan-500/10 text-cyan-600",
-      link: "https://shopsy-gold.vercel.app/",
-      gradient: "from-green-500 to-yellow-600",
+        "Responsive news web app built with React, Tailwind CSS, and Firebase Authentication, featuring private routes, reusable components, and real-time toast notifications. Includes dynamic category-based news browsing.",
+      technologies: ["React", "Firebase Auth", "Tailwind CSS-v4"],
+      link: "https://dragon-news-2-1d8e0.web.app/category/0",
+      github: "https://github.com/ranaIslam01/dragon-news",
     },
     {
       title: "Book Vibe",
+      category: "Web App",
+      image: "https://source.unsplash.com/800x600/?books",
       description:
-        "Developed a responsive book collection web app using React, Tailwind CSS, and API integration, featuring dynamic book data, clean UI, and reusable component architecture.",
-      technologies: ["React", "Tailwind Css","Axios",],
-      techColors: "bg-primary/10 text-primary",
+        "Book collection web app with API integration, clean UI & reusable components. Users can explore books with detailed pages, wishlist options, and dynamic page routing.",
+      technologies: ["React", "Tailwind", "Axios", "Figma"],
       link: "https://book-vibe-blush.vercel.app/",
-      gradient: "from-primary to-purple-600",
+      github: "https://github.com/",
     },
-    
     {
       title: "Peddy",
+      category: "Pet Adoption",
+      image: "https://source.unsplash.com/800x600/?pets",
       description:
-        "Peddy is a clean and responsive pet adoption website built using HTML and CSS",
-      technologies: ["HTML5", "CSS3"],
-      techColors: "bg-cyan-500/10 text-cyan-600",
+        "Clean & responsive pet adoption website built using HTML, CSS & JavaScript. Includes pets listing, filtering options, and beautiful UI animations.",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
       link: "https://peddy-xi.vercel.app/",
-      gradient: "from-pink-500 to-purple-600",
+      github: "https://github.com/",
     },
     {
       title: "Countries Viewer",
+      category: "Data App",
+      image: "https://source.unsplash.com/800x600/?world",
       description:
-        "Countries Viewer is a simple and interactive web app that displays data about countries from around the world.",
-      technologies: ["HTML5", "CSS3","JAVASCRIPT"],
-      techColors: "bg-cyan-500/10 text-cyan-600",
+        "Simple interactive countries viewer using REST Countries API. Includes search system and clean layout for browsing country details.",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
       link: "https://countries-viewer.vercel.app/",
-      gradient: "from-purple-500 to-pink-600",
+      github: "https://github.com/",
     },
-    
     {
-      title: "Tic-Tac-Toe Game",
+      title: "Tic-Tac-Toe",
+      category: "Game",
+      image: "https://source.unsplash.com/800x600/?game",
       description:
-        "ShopHTML, CSS ও JavaScript দিয়ে বানানো একটি সাধারন ২-জনের টিক-ট্যাক-টো গেম।",
-      technologies: ["HTML5", "CSS3","JAVASCRIPT"],
-      techColors: "bg-cyan-500/10 text-cyan-600",
+        "HTML, CSS ও JavaScript দিয়ে তৈরি 2-player টিক-ট্যাক-টো গেম। ইন্টার‍্যাকটিভ বোর্ড, clean UI এবং simple winning logic যুক্ত।",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
       link: "https://tic-tac-toe-game-prnx.vercel.app/",
-      gradient: "from-blue-500 to-red-600",
+      github: "https://github.com/",
     },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30 relative">
+    <section id="projects" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="text-center mb-16 animate-in fade-in duration-1000"
-          data-aos="fade-up"
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Some of the projects I've worked on
+
+        <div className="text-center mb-14" data-aos="fade-up">
+          <h2 className="text-3xl sm:text-4xl font-bold">Projects</h2>
+          <p className="text-muted-foreground mt-3">
+            A showcase of some of my recent work
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project, index) => (
-            <div
-              key={index}
-              className="bg-card p-6 rounded-lg border hover:shadow-lg transition-all   group hover:scale-105 animate-in slide-in-from-left duration-500"
-              data-aos={index === 0 ? "fade-right" : index === 1 ? "fade-up" : "fade-left"}
-              data-aos-delay={index * 200}
-            >
-              <div className="space-y-4">
-                <div
-                  className={`h-2 bg-gradient-to-r ${project.gradient} rounded-full`}
-                ></div>
-                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, i) => (
-                    <span
-                      key={i}
-                      className={`px-3 py-1 ${project.techColors} rounded-full text-sm hover:bg-primary/20 transition-colors`}
-                    >
-                      {tech}
-                    </span>
-                  ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {projectsData.map((project, index) => {
+            const shortText = project.description.slice(0, 90);
+            const isExpanded = expanded === index;
+
+            return (
+              <div
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+                className="bg-card rounded-xl border shadow-sm hover:shadow-xl transition-all overflow-hidden group"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <span className="absolute top-3 left-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full">
+                    {project.category}
+                  </span>
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
-                <div className="flex space-x-2 text-black">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+
+                <div className="p-6 space-y-4">
+                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-sm text-muted-foreground">
+                    {isExpanded ? project.description : `${shortText}...`}
+                  </p>
+
+                  <button
+                    onClick={() => toggleExpand(index)}
+                    className="text-primary text-sm font-medium hover:underline"
                   >
-                    <button className="flex items-center text-sm font-medium border border-gray-300 py-1 px-3 rounded-lg hover:bg-gray-100 hover:scale-105 transition-transform duration-200">
+                    {isExpanded ? "Show Less ▲" : "Show More ▼"}
+                  </button>
+
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-3 pt-2">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-medium border border-gray-300 py-2 px-3 rounded-lg hover:bg-primary hover:text-white transition-all"
+                    >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
-                    </button>
-                  </a>
+                    </a>
+
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm font-medium border border-gray-300 py-2 px-3 rounded-lg hover:bg-gray-800 hover:text-white transition-all"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      GitHub
+                    </a>
+                  </div>
+
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -122,4 +166,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
