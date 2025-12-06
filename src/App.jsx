@@ -61,8 +61,8 @@ function App() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Rana Islam_Resemu.pdf";
-    link.download = "Rana Islam_Resemu.pdf";
+    link.href = "/Rana Professional Resume.pdf";
+    link.download = "Rana Professional Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
